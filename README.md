@@ -4,9 +4,9 @@ Chrome extension that captures the current screen, selected elements, or extende
 
 ## Install (developer mode)
 
-1. Clone this repo
+1. Download the code as a `.zip` (**Code → Download ZIP**) and unzip it
 2. Open `chrome://extensions`, enable **Developer mode**
-3. Click **Load unpacked** and select the project folder
+3. Click **Load unpacked** and select the unzipped folder
 
 ## Structure
 
