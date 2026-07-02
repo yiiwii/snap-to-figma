@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Snap to Figma",
+  "version": "1.0.3",
+  "description": "Capture current screen, selected elements, or extended fullscreen and copy clean design payloads directly to clipboard for Figma.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "logo/clean16.png",
+    "48": "logo/clean48.png",
+    "128": "logo/clean128.png"
+  },
+  "action": {
+    "default_title": "Snap to Figma",
+    "default_icon": {
+      "16": "logo/clean16.png",
+      "48": "logo/clean48.png",
+      "128": "logo/clean128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "capture.js",
+        "runner.js",
+        "logo/clean16.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
